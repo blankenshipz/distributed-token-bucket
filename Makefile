@@ -1,0 +1,3 @@
+test:
+	dockerize -wait tcp://redis:6379 -timeout 10s
+	go test ./...
